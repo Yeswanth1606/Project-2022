@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        body{
+            background-image: url('img1.jfif');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container{
+            width: 700px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(255, 255, 255, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .container .left{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .left img{
+            width: 90%;
+            height: 60%;
+            border-radius: 15px;
+        }
+        .container .right{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container .right .form{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        .form .tag1{
+            width: 100%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .form .tag1 label{
+            font-size: 19px;
+            font-weight: 600;
+        }
+        input[type=file]::file-selector-button {
+            background-color: #000;
+            color: #fff;
+            border: none;
+            outline: none;
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            transition: 0.5s;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .form .tag2{
+            width: 100%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .form .tag2 #submit{
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            transition: 0.5s;
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .title{
+            margin: 100px auto;
+            width: 50%;
+            height: 50px;
+            color: #fff;
+        }
+        .title marquee{
+            font-size: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <marquee behaviour="">Pneumonia Detection using Deep Learning</marquee>
+    </div>
+    <div class="container">
+        <div class="left">
+            <img src="img4.jpg" alt="Image not found">
+        </div>
+        <div class="right">
+            <form action="#" method="post" class="form">
+                <div class="tag1">
+                    <label for="file">Upload the file to detect Pneumonia</label>
+                    <input type="file" class="file" id="file">
+                </div>
+                <div class="tag2">
+                    <input type="submit" id="submit" value="Fetch Result">
+                </div>  
+            </form>
+        </div>
+    </div>
+</body>
+</html>
